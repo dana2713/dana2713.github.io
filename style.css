@@ -12,6 +12,27 @@ header {
     padding: 20px;
     text-align: center;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
 
 section {
     background-color: white;
@@ -55,5 +76,27 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #e76f51;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
 }
