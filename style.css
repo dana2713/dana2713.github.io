@@ -11,22 +11,24 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    justify-content: center;
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 1em;
 }
 
 nav .menu-icon {
     display: none;
-    font-size: 2em;
+    font-size: 1em;
     cursor: pointer;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    justify-content: center;
 }
 
 nav ul li {
@@ -64,9 +66,8 @@ ul {
 }
 
 ul li {
-    /*background: #e9c46a;*/
     margin: 5px 0;
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
 }
 
@@ -81,6 +82,9 @@ a:hover {
 
 
 @media (max-width: 768px) {
+    nav{
+        justify-content: space-between;
+    }
     nav ul {
         display: none;
         flex-direction: column;
@@ -97,6 +101,7 @@ a:hover {
     }
 
     nav ul li {
-        margin: 0.5em 0;
+        margin: 0.1em 0;
     }
+
 }
