@@ -8,8 +8,8 @@ body {
 
 header {
     background-color: #2a9d8f;
-    color: white;
-    padding: 20px;
+    color: rgb(65, 60, 60);
+    padding: 15px;
     text-align: center;
     justify-content: center;
 }
@@ -17,12 +17,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1em;
 }
 
 nav .menu-icon {
     display: none;
-    font-size: 1em;
+    font-size: 1.3em;
     cursor: pointer;
 }
 nav ul {
@@ -59,7 +58,39 @@ h2 {
 h3 {
     color: #2a9d8f;
 }
+.fila-habilidades {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.habilidad {
+    flex: 1;
+    margin-right: 1rem;
+}
 
+.habilidad:last-child {
+    margin-right: 0;
+}
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.barra-progreso {
+    background: #f3f3f3;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 15px;
+    width: 100%;
+}
+.progreso {
+    background: #eddb76;
+    height: 100%;
+    line-height: 15px;
+    color: white;
+    text-align: center;
+    font-size: small;
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -102,6 +133,25 @@ a:hover {
 
     nav ul li {
         margin: 0.1em 0;
+    }
+    .fila-habilidades {
+        flex-direction: column;
+    }
+
+    .habilidad {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .habilidad:last-child {
+        margin-bottom: 0;
+    }
+    .barra-progreso {
+        height: 15px;
+    }
+
+    .progreso {
+        line-height: 15px;
     }
 
 }
