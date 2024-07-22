@@ -103,7 +103,7 @@ ul li {
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -149,9 +149,9 @@ a:hover {
     .barra-progreso {
         height: 15px;
     }
-
     .progreso {
         line-height: 15px;
     }
+    
 
 }
