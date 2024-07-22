@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -16,13 +17,15 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <h1>BIENVENIDOS A MI PORTAFOLIO</h1>
+        <h1>PORTAFOLIO</h1>
     </header>
 
     <section id="inicio">
-        <p>Mi nombre es Dana Bandala soy una estudiante de Ingenieria en Software que actualmente esta cursando el 5° cuatrimestre en la UPSRJ</p>
+        <p>Mi nombre es Dana Bandala soy una estudiante de Ingenieria en Software que actualmente esta cursando el 5° cuatrimestre en la UPSRJ. <br>
+        A futuro me gustaría poder dedicarme a FRONT-END</p>
     </section>
 
     <section id="experiencia">
@@ -67,37 +70,72 @@
         <h2><center>Proyectos</center></h2>
         <div class="proyectos-container">
             <article>
-                <h3>VideoJuego 2D</h3>
-                <p>Este fue el primer juego 2D que hice, la tematica fue algo que se eligió en equipo y su nombre es "Find The Mermaid". <br>
-                El propósito del videojuego fue para un proyecto de la escuela. <br> Se utilizó el software GDevelop5</p>
-                <img src="imagenes/juego1.png" alt="Nivel de prueba FInd the Mermaid" style="width: 70%;">
+                <h3>APP en Android Studio</h3>
+                <p>Mi primera aplicación para dispositivos Android. <br>
+                El propósito de la aplicación fue para un proyecto final en la prepa y acercarnos más al conocimiento de FRONT-END. <br> Se utilizó el software AndroidStudio</p>
+                <img src="imagenes/as.png" alt="Inicio de app en AS">
                 <h4>Desafíos y Soluciones</h4>
-                <p>Uno de los pocos desafios que enfrentamos fue encontrar una tematica adecuada para el juego y el soundtrack para este mismo.</p>
+                <p>La aplicación que hicimos fue una calculadora para resolver permutaciones, y el primer desafio fue que no se podian calcular de manera correcta. Al final 
+                    corroboramos con varios maestros de matématicas y lo que estaba mal era la manera en la que haciamos la operación.</p>
             </article>
             <article>
                 <h3>Página web conectada a base de datos</h3>
                 <p>Esta página web fue destinada a vender cosas del grupo BTS, se utilizo php, html y css. <br> El propósito fue para un proyecto de la escuela.
                 <br></p>
-                <img src="imagenes/pweb.png" alt="Pantalla principal" style="width: 70%;">
-                <p><a href="http://localhost/proyecto/index.php" target="_blank" >>Visita la página</a></p>
+                <img src="imagenes/pweb.png" alt="Pantalla principal">
+                <p><a href="http://localhost/proyecto/index.php" target="_blank">→Visita la página</a></p>
                 <h4>Desafíos y Soluciones</h4>
-                <p>Uno de los desafios más grandes fue conectar la base de datos a la página. Al final solo era resolver unas cosas en el código y se reolvió</p>
+                <p>Uno de los desafios más grandes fue conectar la base de datos a la página. Al final solo era resolver unas cosas en el código y se resolvió con ayuda del profesor</p>
             </article>
             <article>
-                <h3>Videojuego 2D</h3>
+                <h3>VideoJuego 2D</h3>
                 <p>Segundo videojuego 2D que hice, se llamaba "Cake-Land". <br>Fue un proyecto de la escuela y todos utilizamos el software UNITY</p>
-                <video controls width="450">
-                    <source src="imagenes/j3d.mp4" type="video/mp4">
+                <video controls width="100">
+                    <source src="imagenes/j3d.mp4" type="video/mp4" >
                     Tu navegador no soporta el elemento <code>video</code>.
                 </video>
-                <p><a href="enlace-a-demo3" target="_blank">Demostración en Vivo</a></p>
-                <p><a href="enlace-al-repositorio3" target="_blank">Código Fuente</a></p>
                 <h4>Desafíos y Soluciones</h4>
                 <p>Descripción de los desafíos y cómo los resolviste.</p>
             </article>
-            
+            <article>
+                <h3>VideoJuego 3D</h3>
+                <p>Primer videojuego 3D que hice, se llama "FOR-3D". <br>Fue un proyecto de la escuela y todos utilizamos el software UNITY</p>
+                <video controls width="100">
+                    <source src="imagenes/j2d.mp4" type="video/mp4" >
+                    Tu navegador no soporta el elemento <code>video</code>.
+                </video>
+                <h4>Desafíos y Soluciones</h4>
+                <p>Descripción de los desafíos y cómo los resolviste.</p>
+            </article> 
         </div>
     </section>
+
+    <section id="contacto">
+        <h2><center>Contacto</center></h2>
+        <div class="contacto-container">
+            <div class="contact-item">
+            <center>
+                <p><a href="mailto:tuemail@gmail.com"><i class="fas fa-envelope"></i> danabandala7@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> +52 4427376762</p>
+                <p><a href="https://github.com/dana2713" target="_blank"><i class="fab fa-github"></i> dana2713</a></p>
+            </center>
+            </div>
+        
+            <form action="https://formspree.io/f/yourformid" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+       <p>©2024 Dana. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="menu.js"></script>
 
