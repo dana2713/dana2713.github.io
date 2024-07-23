@@ -3,11 +3,10 @@ body {
     margin: 0%;
     width: 100%;
     height: 100%;
-    background-color: #f0f0f5;
-    color: #000000;
+    background-color: #0d0d0e;
+    color: white;
     overflow-x: hidden;
 }
-
 header {
     background-color: #2a9d8f;
     color: rgb(65, 60, 60);
@@ -20,42 +19,34 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
 nav .menu-icon {
     display: none;
     font-size: 20px;
     cursor: pointer;
 }
 nav ul {
-    list-style: none;
+    list-style: space;
     padding: 0;
-    justify-content: center;
+    justify-content: space-between;
 }
-
 nav ul li {
     display: inline;
-    margin: 20%;
+    margin: 20px;
 }
-
 section {
-    background-color: white;
     margin: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 h1, h2, h3 {
     margin-top: 0%;
 }
-
 h1 {
     color: #264653;
 }
-
 h2 {
     color: #e76f51;
 }
-
 h3 {
     color: #2a9d8f;
 }
@@ -68,7 +59,6 @@ h3 {
     flex: 1;
     margin-right: 5%;
 }
-
 .habilidad:last-child {
     margin-right: 0%;
 }
@@ -78,32 +68,31 @@ label {
 }
 .barra-progreso {
     background: #f3f3f3;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
-    height: 15px;
+    height: 40px;
     max-width: 100%;
 }
 .progreso {
     background: #eddb76;
     height: 100%;
-    line-height: 15px;
+    line-height: 40px;
     color: white;
     text-align: center;
-    font-size: small;
+    font-size: medium;
 }
 ul {
     list-style-type: none;
     padding: 0;
 }
-
 ul li {
     margin: 5px 0;
     padding: 5px;
     border-radius: 4px;
 }
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 a:hover {
@@ -115,16 +104,15 @@ a:hover {
     justify-content: space-between;
     gap: 20px;
 }
-
 article {
     flex: 1 1 calc(33.333% - 2rem);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295);
     padding: 2%;
-    background-color: #ffffffb3;
+    background-color: #131313;
     border-radius: 8px;
 }
 img, video {
-    max-width: 100%;
+    width: 100%;
     border-radius: 8px;
 }
 footer {
@@ -133,8 +121,8 @@ footer {
     padding: 1em 0;
     width: 100%;
     bottom: 0;
+    color: #000000;
 }
-
 .contacto-container {
     padding: 1rem;
     display: flex;
@@ -142,33 +130,28 @@ footer {
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
-
 .contact-item {
     flex: 1;
     margin: 0.5rem;
 }
-
 .contact-item a {
     color: #333;
     text-decoration: none;
     font-size: 1.2rem;
     word-wrap: break-word;
+    color: aliceblue;
 }
-
 .contact-item i {
     margin-right: 0.5rem;
 }
-
 form {
     text-align: left;
     padding: 1rem;
 }
-
 form label {
     display: block;
     margin-bottom: 0.5rem;
 }
-
 form input, form textarea {
     margin-right: 250;
     width: 100%;
@@ -177,20 +160,17 @@ form input, form textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 form button {
-    background-color: #000000;
+    background-color: #e94e11;
     color: white;
     padding: 0.75% 1.5%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
 form button:hover {
-    background-color: #e94e11;
+    background-color: black;
 }
-
 @media (max-width: 768px) {
     h1{
         font-size: x-large;
@@ -204,35 +184,30 @@ form button:hover {
         width: 100%;
         text-align: center;
     }
-
     nav ul.show {
         display: flex;
     }
-
     nav .menu-icon {
         display: block;
     }
-
     nav ul li {
-        margin: 0.1% 0;
+        margin: 0.1rem 0;
     }
     .fila-habilidades {
         flex-direction: column;
     }
-
     .habilidad {
         margin-right: 0;
         margin-bottom: 1%;
     }
-
     .habilidad:last-child {
         margin-bottom: 0;
     }
     .barra-progreso {
-        height: 15px;
+        height: 30px;
     }
     .progreso {
-        line-height: 15px;
+        line-height: 30px;
     }
     article {
         flex: 1 1 100%;
@@ -245,5 +220,4 @@ form button:hover {
         min-width: unset;
         max-width: 100%;
     }
-
 }
