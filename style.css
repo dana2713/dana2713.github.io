@@ -1,9 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
     background-color: #f0f0f5;
     color: #000000;
+    overflow-x: hidden;
 }
 
 header {
@@ -21,7 +23,7 @@ nav {
 
 nav .menu-icon {
     display: none;
-    font-size: 1.3em;
+    font-size: 20px;
     cursor: pointer;
 }
 nav ul {
@@ -32,7 +34,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin: 20%;
 }
 
 section {
@@ -43,7 +45,7 @@ section {
 }
 
 h1, h2, h3 {
-    margin-top: 0;
+    margin-top: 0%;
 }
 
 h1 {
@@ -60,18 +62,18 @@ h3 {
 .fila-habilidades {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
 }
 .habilidad {
     flex: 1;
-    margin-right: 1rem;
+    margin-right: 5%;
 }
 
 .habilidad:last-child {
-    margin-right: 0;
+    margin-right: 0%;
 }
 label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2%;
     display: block;
 }
 .barra-progreso {
@@ -80,7 +82,7 @@ label {
     overflow: hidden;
     position: relative;
     height: 15px;
-    width: 100%;
+    max-width: 100%;
 }
 .progreso {
     background: #eddb76;
@@ -111,18 +113,18 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 20px;
 }
 
 article {
     flex: 1 1 calc(33.333% - 2rem);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295);
-    padding: 1rem;
+    padding: 2%;
     background-color: #ffffffb3;
     border-radius: 8px;
 }
 img, video {
-    width: 100%;
+    max-width: 100%;
     border-radius: 8px;
 }
 footer {
@@ -179,7 +181,7 @@ form input, form textarea {
 form button {
     background-color: #000000;
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75% 1.5%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -212,7 +214,7 @@ form button:hover {
     }
 
     nav ul li {
-        margin: 0.1em 0;
+        margin: 0.1% 0;
     }
     .fila-habilidades {
         flex-direction: column;
@@ -220,7 +222,7 @@ form button:hover {
 
     .habilidad {
         margin-right: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1%;
     }
 
     .habilidad:last-child {
