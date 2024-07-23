@@ -38,6 +38,19 @@ section {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.bienvenida{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.bien1{
+    font-size: 50px;
+}
+.bien2{
+    margin-left: 10%;
+    margin-top: 7%;
+    font-size: large;
+}
 h1, h2, h3 {
     margin-top: 0%;
 }
@@ -219,5 +232,17 @@ form button:hover {
     .contact-item {
         min-width: unset;
         max-width: 100%;
+    }
+    .bienvenida{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .bien1{
+        text-align: center;
+    }
+    .bien2{
+        margin-top: 0%;
+        font-size: medium;
     }
 }
